@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/banner"
+        android:layout_alignParentTop="true"
+        android:id="@+id/banner"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_below="@+id/banner"
+        android:id="@+id/full"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rfullname"
+        android:background="#f9f9f9"
+        android:layout_below="@+id/full"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rfullname"
+        android:text="User Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/user"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rusername"
+        android:background="#f9f9f9"
+        android:layout_below="@+id/user"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rusername"
+        android:text="Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rpassword"
+        android:background="#f9f9f9"
+        android:layout_below="@+id/pass"
+        android:inputType="textPassword"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rpassword"
+        android:text="Confirm Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/con"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:id="@+id/rcpassword"
+        android:background="#f9f9f9"
+        android:layout_below="@+id/con"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:id="@+id/register"
+        android:layout_below="@+id/rcpassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered?"
+        android:layout_below="@+id/register"
+        android:layout_marginLeft="90dp"
+        android:id="@+id/ar"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Now!"
+        android:layout_toRightOf="@+id/ar"
+        android:layout_below="@+id/register"
+        android:id="@+id/loginnow"
+        android:textColor="@color/material_blue_grey_800"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/footer"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
